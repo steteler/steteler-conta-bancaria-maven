@@ -1,5 +1,6 @@
 package com.betrybe.bankaccount;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -21,7 +22,7 @@ public class Application {
       System.out.println(
           "Número da conta: " + account.formatAccountNumber(literalAccountNumber)
       );
-    } catch (Throwable InputMismatchException) {
+    } catch (InputMismatchException e) {
       System.out.println("Número da conta inválido!");
     }
   }
