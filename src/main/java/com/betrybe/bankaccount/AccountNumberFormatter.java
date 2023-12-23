@@ -20,8 +20,7 @@ public class AccountNumberFormatter {
       return StringUtils.leftPad(stringAccountNumber, 6, '0');
     } else if (sizeAccountNumber > 6) {
       return StringUtils.right(stringAccountNumber, 6);
-    } else {
-      return stringAccountNumber;
     }
+    return stringAccountNumber;
   }
 }
